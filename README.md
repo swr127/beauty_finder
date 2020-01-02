@@ -4,13 +4,15 @@
 
 The **Beauty Finder** is an application that leverages the News API to present news articles from over 30,000 sources that are specific to the beauty industry.
 
+Live App: 
+
 ## Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
 |Jan 2rd| Create repository & README.md with project overview| In progress
 |Jan 3rd| Flesh out wireframes, priority matrix, and MVP | Incomplete
-|Jan 4th| Psuedocode core application structure (HTML, CSS, JavaScript.) | Incomplete
+|Jan 4th| Pseudocode core application structure (HTML, CSS, JavaScript.) | Incomplete
 |Jan 5th| Code core application structure (HTML, CSS) | Incomplete
 |Jan 6th| Code core application structure (JavaScript) | Incomplete
 |Jan 7th| Code MVP | Incomplete
