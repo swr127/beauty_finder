@@ -1,12 +1,12 @@
 # Beauty Finder Overview 
 
-## Description
+## Project Description
 
 The **Beauty Finder** is an application that leverages the News API to present news articles from over 30,000 sources that are specific to the beauty industry.
 
 Live App: 
 
-## Schedule
+## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -24,7 +24,6 @@ Live App:
 Include a full list of features that have been prioritized based on the `Time and Importance` Matrix. 
 
 ## Timeframes 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
