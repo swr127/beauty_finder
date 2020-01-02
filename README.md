@@ -34,7 +34,6 @@ Live App:
 | Implement responsive design | M | 2hrs| 2hrs | TBD |
 | Advanced CSS features | L | 2.5hrs| 2.5hrs | TBD |
 | Use local storage | L | 2.5hrs| 2.5hrs | TBD |
-
 | Total | H | 24hrs| 24hrs | TBD |
 
 ## Wireframes
