@@ -60,12 +60,13 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 - Find and use external api 
 - Render data on page 
-- Allow user to choose favorites 
+- Enable search functionality 
+- Implement responsive design
 
 ## PostMVP 
 
-- Add second API
-- Use local storage to save user favorites
+- Add advanced CSS feautures (transforms, transitions, or animations)
+- Use local storage to save user activity 
 
 ## Code Snippet
 
