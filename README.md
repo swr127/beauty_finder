@@ -39,7 +39,7 @@ Live App:
 ## Wireframes
 
 <a href="https://imgur.com/8Lq2KX9"><img src="https://i.imgur.com/8Lq2KX9.png" title="source: imgur.com" /></a>
-Link to wireframe: https://wireframe.cc/K98Wji
+<br>Link to wireframe: https://wireframe.cc/K98Wji
 
 ## API Data Sample
 
