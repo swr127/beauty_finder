@@ -38,7 +38,8 @@ Live App:
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+<a href="https://imgur.com/8Lq2KX9"><img src="https://i.imgur.com/8Lq2KX9.png" title="source: imgur.com" /></a>
+Link to wireframe: https://wireframe.cc/K98Wji
 
 ## API Data Sample
 
