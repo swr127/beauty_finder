@@ -27,7 +27,7 @@ Live App:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Set up core code (HTML, CSS, JS) | H | 6hrs| 6hrs | TBD |
-| Fetch and use News API | H | 5hrs| 5hrs | TBD |
+| Find and use external API | H | 5hrs| 5hrs | TBD |
 | Render data on page | H | 4.5hrs| 4.5hrs | TBD |
 | Enable search functionality | H | 4.5hrs| 4.5hrs | TBD |
 | Implement responsive design | M | 3.5hrs| 3.5hrs | TBD |
@@ -64,13 +64,13 @@ Live App:
 ## MVP 
 
 - Fetch and use News API
-- Render the news artcicles related to the beauty industry data on page 
-- Enable search functionality so that the user can filter the new articles by related keywords (i.e. vegan, mascara, cruelty-free, sephora, etc.)
+- Render news articles related to the beauty industry on page 
+- Enable search functionality so that the user can filter the news articles by related keywords (i.e. vegan, mascara, cruelty-free, sephora, etc.)
 - Implement a responsive design that enables to the user to read the articles and use the search functionality on any device 
 
 ## PostMVP 
 
-- Add advanced CSS feautures to the news articles based on user interaction (i.e. zoom in on image when the user hovers over it)
+- Add advanced CSS features to the news articles based on user interaction (i.e. zoom in on image when the user hovers over it)
 - Use local storage to save user search history
 
 ## Code Snippet
