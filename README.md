@@ -21,7 +21,7 @@ Live App:
 
 ## Priority Matrix
 
-<a href="https://imgur.com/g5kN3hT"><img src="https://i.imgur.com/g5kN3hTs.png" title="source: imgur.com" /></a> 
+<a href="https://imgur.com/g5kN3hT"><img src="https://i.imgur.com/g5kN3hTb.png" title="source: imgur.com" /></a>
 
 ## Timeframes 
 
