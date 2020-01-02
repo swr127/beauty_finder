@@ -27,13 +27,13 @@ Live App:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Set up core code (HTML, CSS, JS) | H | 6hrs| 6hrs | TBD |
-| Find and use external API | H | 4hrs| 4hrs | TBD |
-| Render data on page | H | 4hrs| 4hrs | TBD |
-| Enable search functionality | H | 3hrs| 3hrs | TBD |
-| Implement responsive design | M | 2hrs| 2hrs | TBD |
-| Advanced CSS features | L | 2.5hrs| 2.5hrs | TBD |
+| Fetch and use News API | H | 5hrs| 5hrs | TBD |
+| Render data on page | H | 4.5hrs| 4.5hrs | TBD |
+| Enable search functionality | H | 4.5hrs| 4.5hrs | TBD |
+| Implement responsive design | M | 3.5hrs| 3.5hrs | TBD |
+| Advanced CSS features | L | 3.5hrs| 3.5hrs | TBD |
 | Use local storage | L | 2.5hrs| 2.5hrs | TBD |
-| Total |  | 24hrs| 24hrs | TBD |
+| Total |  | 30hrs| 30hrs | TBD |
 
 ## Wireframes
 
@@ -63,15 +63,15 @@ Live App:
  
 ## MVP 
 
-- Find and use external API 
-- Render data on page 
-- Enable search functionality 
-- Implement responsive design
+- Fetch and use News API
+- Render the news artcicles related to the beauty industry data on page 
+- Enable search functionality so that the user can filter the new articles by related keywords (i.e. vegan, mascara, cruelty-free, sephora, etc.)
+- Implement a responsive design that enables to the user to read the articles and use the search functionality on any device 
 
 ## PostMVP 
 
-- Add advanced CSS feautures (transforms, transitions, or animations)
-- Use local storage to save user activity 
+- Add advanced CSS feautures to the news articles based on user interaction (i.e. zoom in on image when the user hovers over it)
+- Use local storage to save user search history
 
 ## Code Snippet
 
