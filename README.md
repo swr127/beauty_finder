@@ -4,27 +4,6 @@
 
 The **Beauty Finder** is an application that leverages the News API to present news articles from over 30,000 sources that are specific to the beauty industry.
 
-## API Data Sample
-
-```
-"status": "ok",
-    "totalResults": 7171,
-    "articles": [
-        {
-            "source": {
-                "id": "independent",
-                "name": "Independent"
-            },
-            "author": "Sarah Young, Sarah Young",
-            "title": "Sustainable beauty resolutions: 5 ways to overhaul your routine for 2020, from face wipes to cotton buds",
-            "description": "Become a more conscientious beauty consumer this year",
-            "url": "https://www.independent.co.uk/life-style/fashion/sustainable-beauty-resolution-routine-wipes-cotton-buds-plastic-packaging-a9265711.html",
-            "urlToImage": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/12/31/15/waste-beauty.jpg",
-            "publishedAt": "2020-01-02T15:49:32Z",
-            "content": "As consumers become increasingly aware of the pollution and waste caused by single-use products, items like plastic straws, water bottles and disposable coffee cups have become maligned. But what about our beauty routines?\r\nA quick glance in your bathroom cab… [+15569 chars]"
-        }
-```
-
 ## Schedule
 
 |  Day | Deliverable | Status
@@ -54,6 +33,27 @@ Time frames are also key in the development cycle.  You have limited time to cod
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+
+## API Data Sample
+
+```
+"status": "ok",
+    "totalResults": 7171,
+    "articles": [
+        {
+            "source": {
+                "id": "independent",
+                "name": "Independent"
+            },
+            "author": "Sarah Young, Sarah Young",
+            "title": "Sustainable beauty resolutions: 5 ways to overhaul your routine for 2020, from face wipes to cotton buds",
+            "description": "Become a more conscientious beauty consumer this year",
+            "url": "https://www.independent.co.uk/life-style/fashion/sustainable-beauty-resolution-routine-wipes-cotton-buds-plastic-packaging-a9265711.html",
+            "urlToImage": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/12/31/15/waste-beauty.jpg",
+            "publishedAt": "2020-01-02T15:49:32Z",
+            "content": "As consumers become increasingly aware of the pollution and waste caused by single-use products, items like plastic straws, water bottles and disposable coffee cups have become maligned. But what about our beauty routines?\r\nA quick glance in your bathroom cab… [+15569 chars]"
+        }
+```
  
 ## MVP 
 
