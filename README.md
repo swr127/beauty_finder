@@ -63,7 +63,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
  
 ## MVP 
 
-- Find and use external api 
+- Find and use external API 
 - Render data on page 
 - Enable search functionality 
 - Implement responsive design
