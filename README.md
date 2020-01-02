@@ -27,9 +27,15 @@ Live App:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Set up core code (HTML, CSS, JS) | H | 6hrs| 6hrs | TBD |
+| Find and use external API | H | 4hrs| 4hrs | TBD |
+| Render data on page | H | 4hrs| 4hrs | TBD |
+| Enable search functionality | H | 3hrs| 3hrs | TBD |
+| Implement responsive design | M | 2hrs| 2hrs | TBD |
+| Advanced CSS features | L | 2.5hrs| 2.5hrs | TBD |
+| Use local storage | L | 2.5hrs| 2.5hrs | TBD |
+
+| Total | H | 24hrs| 24hrs | TBD |
 
 ## Wireframes
 
