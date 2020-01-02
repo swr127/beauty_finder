@@ -21,7 +21,7 @@ Live App:
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix. 
+<a href="https://imgur.com/g5kN3hT"><img src="https://i.imgur.com/g5kN3hTs.png" title="source: imgur.com" /></a> 
 
 ## Timeframes 
 
