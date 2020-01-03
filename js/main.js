@@ -32,6 +32,7 @@ const renderArticles = async () => {
         <p>AUTHOR: ${article.author}</p>
         <p>TITLE: ${article.title}</p>
         <p>${article.content}</p>
+        <button id="readmore" onclick="window.location.href = '${article.url}';">Read More</button>
         `
         articleDetails.append(newArticle)
 
