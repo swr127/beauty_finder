@@ -18,32 +18,49 @@ const renderArticles = async () => {
     const responseArticles = await axios.get(`${newsURL}&apiKey=${apiKEY}`)
     console.log(responseArticles)
 
-    const articleDetails = document.querySelector('article')
-        articleDetails.innerHTML = '' 
-    
-    const articleImage = document.querySelector('article')
-        articleImage.innerHTML = `<img src='${responseArticles.data.articles[0].urlToImage}'/>`
+    const articles = responseArticles.data.articles
 
-    const articleDate = document.createElement('p')
-        articleDate.innerHTML = `PUBLISHED: ${responseArticles.data.articles[0].publishedAt}`
-        articleDetails.append(articleDate)
+    const articleDetails = document.querySelector('section')
+    articleDetails.innerHTML = ''
+    articles.forEach(article => {
+        const newArticle = document.createElement('article')
+        newArticle.innerHTML =  `
+        <img src=${article.urlToImage} />
+        <p>PUBLISHED: ${article.publishedAt}</p>
+        <p>SOURCE: ${article.source.name}</p>
+        `
+        articleDetails.append(newArticle)
 
-    const articleSource = document.createElement('p')
-        articleSource.innerHTML = `SOURCE: ${responseArticles.data.articles[0].source.name}`
-        articleDetails.append(articleSource)
+    })
+
+    // for (let i = 0; i <= articles.length; i++) {
+
+    //     const articleDetails = document.querySelector('article')
+    //         articleDetails.innerHTML = '' 
     
-    const articleAuthor = document.createElement('p')
-        articleAuthor.innerHTML = `AUTHOR: ${responseArticles.data.articles[0].author}`
-        articleDetails.append(articleAuthor)
+    //     const articleImage = document.querySelector('article')
+    //         articleDetails.innerHTML = `<img src='${articles[i].urlToImage}'/>`
+
+    //     const articleDate = document.createElement('p')
+    //         articleDate.innerHTML = `PUBLISHED: ${articles[i].publishedAt}`
+    //         articleDetails.append(articleDate)
+
+    //     const articleSource = document.createElement('p')
+    //         articleSource.innerHTML = `SOURCE: ${articles[i].source.name}`
+    //         articleDetails.append(articleSource)
     
-    const articleTitle = document.createElement('p')
-        articleTitle.innerHTML = `TITLE: ${responseArticles.data.articles[0].title}`
-        articleDetails.append(articleTitle)
+    //     const articleAuthor = document.createElement('p')
+    //         articleAuthor.innerHTML = `AUTHOR: ${articles[i].author}`
+    //         articleDetails.append(articleAuthor)
     
-    const articleDescription = document.createElement('p')
-        articleDescription.innerHTML = `${responseArticles.data.articles[0].content}`
-        articleDetails.append(articleDescription)
-       
+    //     const articleTitle = document.createElement('p')
+    //         articleTitle.innerHTML = `TITLE: ${articles[i].title}`
+    //         articleDetails.append(articleTitle)
+    
+    //     const articleDescription = document.createElement('p')
+    //         articleDescription.innerHTML = `${articles[i].content}`
+    //         articleDetails.append(articleDescription)
+    // }
 }
 
 renderArticles()
