@@ -20,6 +20,9 @@ const renderArticles = async () => {
 
     const articleDetails = document.querySelector('article')
         articleDetails.innerHTML = '' 
+    
+    const articleImage = document.querySelector('article')
+        articleImage.innerHTML = `<img src='${responseArticles.data.articles[0].urlToImage}'/>`
 
     const articleDate = document.createElement('p')
         articleDate.innerHTML = `PUBLISHED: ${responseArticles.data.articles[0].publishedAt}`
