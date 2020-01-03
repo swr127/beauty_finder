@@ -21,6 +21,31 @@ body {
     
   }
   
+  img {
+      height: 400px;
+      width: 600px;
+  }
+
   aside {
     
+  }
+
+    /* MOBILE SCREEN */
+@media screen and (max-width: 600px) {
+    main {
+      
+    }
+  
+    article {
+      
+    }
+
+    img {
+        height: 300px;
+        width: 400px;
+    }
+  
+    aside {
+      
+    }
   }
