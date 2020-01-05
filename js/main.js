@@ -20,11 +20,11 @@ const renderArticles = async () => {
 
     const articles = responseArticles.data.articles
 
-    const articleDetails = document.querySelector('section')
+    const articleDetails = document.querySelector('article')
     articleDetails.innerHTML = ''
 
     articles.forEach(article => {
-        const newArticle = document.createElement('article')
+        const newArticle = document.createElement('div')
         newArticle.innerHTML =  `
         <img src=${article.urlToImage} />
         <p>PUBLISHED: ${article.publishedAt}</p>
