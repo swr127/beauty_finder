@@ -45,14 +45,7 @@ renderArticles()
 // RENDER ARTICLES FROM SEARCH
 // **************
 
-const searchInput = document.querySelector('#searchbox')
-const searchRequest = document.querySelector('#searchbutton')
-
-searchRequest.addEventListener('click', renderSearch)
-searchRequest.addEventListener('keyup', renderSearch)
-
 const renderSearch = async () => {
-    renderSearch.preventDefault()
 
     const responseSearch = await axios.get(`${searchURL}${searchbox.value}${sortBY}&apiKey=${apiKEY}`)
     console.log(responseSearch)
@@ -62,18 +55,29 @@ const renderSearch = async () => {
     const searchDetails = document.querySelector('article')
     searchDetails.innerHTML = ''
 
-    search.forEach(article => {
+    search.forEach(searches => {
         const newSearch = document.createElement('div')
         newSearch.innerHTML =  `
-        <img src=${article.urlToImage} />
-        <p>PUBLISHED: ${article.publishedAt}</p>
-        <p>SOURCE: ${article.source.name}</p>
-        <p>AUTHOR: ${article.author}</p>
-        <p>TITLE: ${article.title}</p>
-        <p>${article.content}</p>
-        <button id="readmore" onclick="window.location.href = '${article.url}';">Read More</button>
+        <img src=${searches.urlToImage} />
+        <p>PUBLISHED: ${searches.publishedAt}</p>
+        <p>SOURCE: ${searches.source.name}</p>
+        <p>AUTHOR: ${searches.author}</p>
+        <p>TITLE: ${searches.title}</p>
+        <p>${searches.content}</p>
+        <button id="readmore" onclick="window.location.href = '${searches.url}';">Read More</button>
         `
         searchDetails.append(newSearch)
 
     })
 }
+
+const searchRequest = document.querySelector('#searchbutton')
+searchRequest.addEventListener('click', (event => {
+    event.preventDefault()
+    const searchInput = document.querySelector('#searchbox')
+    renderSearch(searchInput.value)
+}))
+
+// searchRequest.addEventListener('click', renderSearch)
+// searchRequest.addEventListener('keyup', renderSearch)
+// const searchInput = document.querySelector('#searchbox')
