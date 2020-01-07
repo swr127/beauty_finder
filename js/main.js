@@ -57,9 +57,16 @@ renderArticles()
 // RENDER ARTICLES FROM SEARCH
 // **************
 
+const searchRequest = document.querySelector('#searchbutton')
+const searchInput = document.querySelector('#searchbox')
+
+searchRequest.addEventListener('click', (event => {
+    event.preventDefault()
+    renderSearch()
+}))
 
 const renderSearch = async () => {
-    const responseSearch = await axios.get(`${searchURL}${searchInput.replace(/" "/g, "%20")}${sortBY}&apiKey=${apiKEY}`)
+    const responseSearch = await axios.get(`${searchURL}${searchInput.value}${sortBY}&apiKey=${apiKEY}`)
     console.log(responseSearch)
 
     const search = responseSearch.data.articles
@@ -83,10 +90,3 @@ const renderSearch = async () => {
 
     })
 }
-
-const searchRequest = document.querySelector('#searchbutton')
-searchRequest.addEventListener('click', (event => {
-    event.preventDefault()
-    const searchInput = document.querySelector('#searchbox')
-    renderSearch(searchInput.value)
-}))
