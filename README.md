@@ -12,7 +12,7 @@ Live App:
 |---|---| ---|
 |Jan 2rd| Create repository & README.md with project overview| Complete
 |Jan 3rd| Pseudocode core application structure (HTML, CSS, JavaScript) | Complete
-|Jan 5th| Code core application structure (HTML, Javascript) | Complete
+|Jan 5th| Code core application structure (HTML, CSS, Javascript) | Complete
 |Jan 6th| Code MVP | Incomplete
 |Jan 7th| Code core application styling (CSS) | Incomplete
 |Jan 8th| Code additional styling & PostMVP | Incomplete
