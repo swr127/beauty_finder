@@ -89,6 +89,10 @@ body {
   h1 {
     font-size: 40px;
   }
+
+  .description {
+    font-size: 18px;
+  }
   
   div {
     display: block;
@@ -111,6 +115,10 @@ body {
   h1 {
     font-size: 30px;
     font-weight: bolder;
+  }
+
+  .description {
+    font-size: 16px;
   }
   
   div {
@@ -136,9 +144,13 @@ body {
     font-weight: bolder;
   }
 
+  .description {
+    font-size: 16px;
+  }
+
   div {
     display: block;
-    font-size: 16px;
+    font-size: 12px;
     padding: 10px;
     width: 450px;
   }

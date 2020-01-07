@@ -41,7 +41,7 @@ const renderArticles = async () => {
         const newArticle = document.createElement('div')
         newArticle.innerHTML =  `
         <img class="image" src=${article.urlToImage} />
-        <p><b>PUBLISHED</b>: ${article.publishedAt}</p>
+        <p>PUBLISHED: ${article.publishedAt}</p>
         <p>SOURCE: ${article.source.name}</p>
         <p>AUTHOR: ${article.author}</p>
         <p>TITLE: ${article.title}</p>
