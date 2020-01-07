@@ -1,21 +1,33 @@
 // **************
 // SET UP NEWS API
 // **************
-const newsURL = "https://newsapi.org/v2/everything?q=makeup&q=skincare";
-const searchURL = "https://newsapi.org/v2/everything?q=makeup&q=skincare&q=";
-const sortBY = "&sortBy=publishedAt" 
+
+const url = "https://newsapi.org/v2/everything?q="
+const sortBY = "&sortBy=publishedAt"
 const apiKEY = '3e31013428a049488c33fc92999db3dd'
 
 // **************
-// SET UP GLOBAL VARIABLES
+// SET UP NEWS API FILTERING
+// Advanced search filtering code found from W3 Schools
 // **************
+
+const searchTerms = "cosmetics, beauty, skincare, makeup"
+const searchResults = `${searchTerms.replace(/, /g, " OR ")}`
+const resultsURL = encodeURIComponent(searchResults)
+
+const antiSearchTerms = "NOT politics, NOT trump, NOT sports, NOT nike, NOT finance, NOT null";
+const antiSearchResults = `${antiSearchTerms.replace(/, /g, " AND ")}`
+const antiResultsURL = encodeURIComponent(antiSearchResults);
+
+const articleURL = `${url}${resultsURL}%20AND%20${antiResultsURL}${sortBY}&apiKey=${apiKEY}`
+const searchURL = `${url}${resultsURL}%20AND%20${antiResultsURL}%20AND%20`
 
 // **************
 // RENDER ARTICLES
 // **************
 
 const renderArticles = async () => {
-    const responseArticles = await axios.get(`${newsURL}${sortBY}&apiKey=${apiKEY}`)
+    const responseArticles = await axios.get(`${articleURL}`)
     console.log(responseArticles)
 
     const articles = responseArticles.data.articles
@@ -45,12 +57,13 @@ renderArticles()
 // RENDER ARTICLES FROM SEARCH
 // **************
 
-const renderSearch = async () => {
 
-    const responseSearch = await axios.get(`${searchURL}${searchbox.value}${sortBY}&apiKey=${apiKEY}`)
+const renderSearch = async () => {
+    const responseSearch = await axios.get(`${searchURL}${searchInput.replace(/" "/g, "%20")}${sortBY}&apiKey=${apiKEY}`)
     console.log(responseSearch)
 
     const search = responseSearch.data.articles
+
 
     const searchDetails = document.querySelector('article')
     searchDetails.innerHTML = ''
@@ -77,7 +90,3 @@ searchRequest.addEventListener('click', (event => {
     const searchInput = document.querySelector('#searchbox')
     renderSearch(searchInput.value)
 }))
-
-// searchRequest.addEventListener('click', renderSearch)
-// searchRequest.addEventListener('keyup', renderSearch)
-// const searchInput = document.querySelector('#searchbox')
