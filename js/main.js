@@ -8,7 +8,9 @@ const apiKEY = '3e31013428a049488c33fc92999db3dd'
 
 // **************
 // SET UP NEWS API FILTERING
-// Advanced search filtering code found from W3 Schools
+// Advanced search filtering code found from Stackoverflow and W3 Schools
+// https://stackoverflow.com/questions/1206911/why-do-i-need-to-add-g-when-using-string-replace-in-javascript
+// https://www.w3schools.com/jsref/jsref_encodeuricomponent.asp
 // **************
 
 const searchTerms = "cosmetics, beauty, skincare, makeup"
@@ -54,7 +56,7 @@ const renderArticles = async () => {
 renderArticles()
 
 // **************
-// RENDER ARTICLES FROM SEARCH
+// RENDER SEARCH
 // **************
 
 const searchRequest = document.querySelector('#searchbutton')
