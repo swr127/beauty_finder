@@ -40,8 +40,8 @@ const renderArticles = async () => {
     articles.forEach(article => {
         const newArticle = document.createElement('div')
         newArticle.innerHTML =  `
-        <img src=${article.urlToImage} />
-        <p>PUBLISHED: ${article.publishedAt}</p>
+        <img class="image" src=${article.urlToImage} />
+        <p><b>PUBLISHED</b>: ${article.publishedAt}</p>
         <p>SOURCE: ${article.source.name}</p>
         <p>AUTHOR: ${article.author}</p>
         <p>TITLE: ${article.title}</p>
@@ -79,7 +79,7 @@ const renderSearch = async () => {
     search.forEach(searches => {
         const newSearch = document.createElement('div')
         newSearch.innerHTML =  `
-        <img src=${searches.urlToImage} />
+        <img class="image" src=${searches.urlToImage} />
         <p>PUBLISHED: ${searches.publishedAt}</p>
         <p>SOURCE: ${searches.source.name}</p>
         <p>AUTHOR: ${searches.author}</p>
