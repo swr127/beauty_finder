@@ -41,8 +41,8 @@ body {
 
   img {
     border-radius: 15px;
-    height: 400px;
-    width: 600px;
+    height: 450px;
+    width: 750px;
   }
 
   .readmore {
@@ -77,13 +77,13 @@ body {
   }
 
   img {
-      height: 350px;
-      width: 550px;
+      height: 400px;
+      width: 600px;
   }
 }
 
 /* **************
-// MOBILE
+// STANDARD MOBILE
 /* **************/
 @media screen and (max-width: 600px) {
   main {
@@ -101,7 +101,31 @@ body {
   }
 
   img {
+      height: 300px;
+      width: 500px;
+  }
+}
+
+/* **************
+// SMALL MOBILE
+/* **************/
+@media screen and (max-width: 500px) {
+  main {
+    
+  }
+
+  article {
+    
+  }
+
+  div {
+    display: block;
+    padding: 10px;
+    width: 450px;
+  }
+
+  img {
       height: 250px;
-      width: 350px;
+      width: 400px;
   }
 }
