@@ -5,13 +5,10 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    overflow: scroll;
-    overflow-x: hidden;
   }
 
   header, footer {
-    flex: 0 150px;
+    flex: 0;
   }
 
   main {
@@ -20,8 +17,7 @@ body {
   }
   
   article {
-    order: 2;
-    flex: 3;
+    flex: 2;
   }
   
 /* **************

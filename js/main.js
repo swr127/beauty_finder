@@ -46,7 +46,7 @@ const renderArticles = async () => {
         <p>AUTHOR: ${article.author}</p>
         <p>TITLE: ${article.title}</p>
         <p>${article.content}</p>
-        <button id="readmore" onclick="window.location.href = '${article.url}';">Read More</button>
+        <button class="readmore" onclick="window.location.href = '${article.url}';">READ MORE</button>
         `
         articleDetails.append(newArticle)
 
@@ -84,8 +84,8 @@ const renderSearch = async () => {
         <p>SOURCE: ${searches.source.name}</p>
         <p>AUTHOR: ${searches.author}</p>
         <p>TITLE: ${searches.title}</p>
-        <p>${searches.content}</p>
-        <button id="readmore" onclick="window.location.href = '${searches.url}';">Read More</button>
+        <p>"content">${searches.content}</p>
+        <button class="readmore" onclick="window.location.href = '${searches.url}';">READ MORE</button>
         `
         searchDetails.append(newSearch)
 

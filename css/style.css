@@ -3,15 +3,16 @@
 /* **************/
 body {
   align-items: center;
-  /* background-color: #f3f6f6; */
+  background-color: white;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  margin: 0 auto;
 }
-  nav {
 
+  form {
+    background-color: #f3f6f6;
+    width: 100%;
   }
-  
+
   header {
 
   }
@@ -25,12 +26,22 @@ body {
   }
   
   div {
-    
+    display: block;
+    padding: 10px;
+    width: 800px;
   }
 
   img {
       height: 400px;
       width: 600px;
+  }
+
+  .readmore {
+    border: 1;
+    border-color: black;
+    background-color: white;
+    font-size: 16px;
+    color: black;
   }
 
   footer {
@@ -50,6 +61,10 @@ body {
       
   }
 
+  div {
+    width: 750px;
+  }
+
   img {
       height: 350px;
       width: 550px;
@@ -66,6 +81,10 @@ body {
 
   article {
     
+  }
+
+  div {
+    width: 550px;
   }
 
   img {
