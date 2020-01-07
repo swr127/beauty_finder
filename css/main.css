@@ -1,4 +1,7 @@
-/* BODY */
+/* **************
+// DESKTOP
+/* **************/
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,15 +10,13 @@ body {
     overflow-x: hidden;
   }
 
-/* HEADER AND FOOTER */
   header, footer {
     flex: 0 150px;
   }
 
-/* CONTENT */
   main {
-    flex: 1;
     display: flex;
+    flex: 1;
   }
   
   article {
@@ -23,29 +24,30 @@ body {
     flex: 3;
   }
   
-  aside {
-    flex: 0 300px;
-  }
-  
-  .left {
-    order: 1;
-  }
-  
-  .right {
-    order: 3;
+/* **************
+// TABLET 
+/* **************/
+
+@media screen and (max-width: 1025px) {
+  main {
+    flex-direction: column;
   }
 
-  /* MOBILE SCREEN */
-@media screen and (max-width: 600px) {
-    main {
-      flex-direction: column;
-    }
-  
-    article {
-      order: 0;
-    }
-  
-    aside {
-      flex: 0;
-    }
+  article {
+    order: 0;
   }
+}
+
+/* **************
+// MOBILE 
+/* **************/
+
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+  
+  article {
+    order: 0;
+  }
+}

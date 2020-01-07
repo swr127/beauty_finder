@@ -1,51 +1,75 @@
-/* BODY */
+/* **************
+// DESKTOP
+/* **************/
 body {
-    
-  }
+  align-items: center;
+  /* background-color: #f3f6f6; */
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+}
+  nav {
 
-/* HEADER AND FOOTER */
+  }
+  
   header {
 
   }
-  
-  footer {
-      
-  }
 
-/* CONTENT */
   main {
-    
+
   }
-  
+    
   article {
     
   }
   
+  div {
+    
+  }
+
   img {
       height: 400px;
       width: 600px;
   }
 
-  aside {
+  footer {
+      
+  }
+
+/* **************
+// TABLET
+/* **************/
+
+@media screen and (max-width: 1025px) {
+  main {
+  
+  }
+  
+  article {
+      
+  }
+
+  img {
+      height: 350px;
+      width: 550px;
+  }
+}
+
+/* **************
+// MOBILE
+/* **************/
+@media screen and (max-width: 600px) {
+  main {
     
   }
 
-    /* MOBILE SCREEN */
-@media screen and (max-width: 600px) {
-    main {
-      
-    }
-  
-    article {
-      
-    }
-
-    img {
-        height: 300px;
-        width: 400px;
-    }
-  
-    aside {
-      
-    }
+  article {
+    
   }
+
+  img {
+      height: 250px;
+      width: 350px;
+  }
+}

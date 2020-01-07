@@ -73,7 +73,6 @@ const renderSearch = async () => {
 
     const search = responseSearch.data.articles
 
-
     const searchDetails = document.querySelector('article')
     searchDetails.innerHTML = ''
 
