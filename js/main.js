@@ -3,7 +3,7 @@
 // **************
 
 const url = "https://newsapi.org/v2/everything?q="
-const sortBY = "&sortBy=publishedAt"
+const sortBY = "&sortBy=trending"
 const apiKEY = '3e31013428a049488c33fc92999db3dd'
 
 // **************
@@ -15,7 +15,7 @@ const searchTerms = "cosmetics, beauty, skincare, makeup"
 const searchResults = `${searchTerms.replace(/, /g, " OR ")}`
 const resultsURL = encodeURIComponent(searchResults)
 
-const antiSearchTerms = "NOT politics, NOT trump, NOT sports, NOT nike, NOT finance, NOT null";
+const antiSearchTerms = "NOT politics, NOT trump, NOT finance, NOT tech, NOT sports, NOT film, NOT food, NOT nike, NOT null";
 const antiSearchResults = `${antiSearchTerms.replace(/, /g, " AND ")}`
 const antiResultsURL = encodeURIComponent(antiSearchResults);
 
