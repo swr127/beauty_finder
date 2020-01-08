@@ -65,23 +65,38 @@ searchRequest.addEventListener('click', (event => {
 }))
 
 const renderSearch = async () => {
-    const responseSearch = await axios.get(`${searchURL}${searchInput.value}${sortBY}&apiKey=${apiKEY}`)
-    console.log(responseSearch)
 
-    const search = responseSearch.data.articles
+    try {
+        const responseSearch = await axios.get(`${searchURL}${searchInput.value}${sortBY}&apiKey=${apiKEY}`)
+        console.log(responseSearch)
 
-    const searchDetails = document.querySelector('article')
-    searchDetails.innerHTML = ''
+        const search = responseSearch.data.articles
 
-    search.forEach(searches => {
-        const newSearch = document.createElement('div')
-        newSearch.innerHTML =  `
-        <img class="image" src=${searches.urlToImage} />
-        <p><b>${searches.title}</b></p>
-        <p>${searches.content}</p>
-        <button class="readmore" onclick="window.open('${searches.url}')">READ MORE</button>
-        `
-        searchDetails.append(newSearch)
+        const searchDetails = document.querySelector('article')
+        searchDetails.innerHTML = ''
 
-    })
+        search.forEach(searches => {
+            const newSearch = document.createElement('div')
+            newSearch.innerHTML =  `
+            <img class="image" src=${searches.urlToImage} />
+            <p><b>${searches.title}</b></p>
+            <p>${searches.content}</p>
+            <button class="readmore" onclick="window.open('${searches.url}')">READ MORE</button>
+            `
+            searchDetails.append(newSearch)
+        })
+    
+    } catch(err) {
+    
+        const errorDetails = document.querySelector('article')
+        errorDetails.innerHTML = ''
+
+        const error = document.createElement('div')
+        error.innerHTML = `We're sorry, no results were found for your search.`
+        errorDetails.append(error)
+        
+        console.log(`Search error occured: ${err}`)
+        console.log(err.response)
+
+    }
 }

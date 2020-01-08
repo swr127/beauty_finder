@@ -38,6 +38,20 @@ body {
 // MOBILE 
 /* **************/
 
+@media screen and (max-width: 500px) {
+  main {
+    flex-direction: column;
+  }
+  
+  article {
+    order: 0;
+  }
+}
+
+/* **************
+// SMALL MOBILE 
+/* **************/
+
 @media screen and (max-width: 600px) {
   main {
     flex-direction: column;
