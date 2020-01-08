@@ -64,8 +64,6 @@ searchRequest.addEventListener('click', (event => {
     renderSearch()
 }))
 
-
-
 const renderSearch = async () => {
 
     const responseSearch = await axios.get(`${searchURL}${searchInput.value}${sortBY}&apiKey=${apiKEY}`)
@@ -96,11 +94,9 @@ const renderSearch = async () => {
         errorDetails.innerHTML = ''
 
         const error = document.createElement('div')
-        error.innerHTML = `We're sorry, no results were found for your search.`
+        error.innerHTML = `
+        <p class="error">We're sorry, no results were found for your search.</p>`
         errorDetails.append(error)
-        
-        console.log(`Search error occured: ${err}`)
-        console.log(err.response)
-
+    
     }
 }
