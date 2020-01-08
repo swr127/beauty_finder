@@ -84,8 +84,8 @@ const renderSearch = async () => {
         <p>SOURCE: ${searches.source.name}</p>
         <p>AUTHOR: ${searches.author}</p>
         <p>TITLE: ${searches.title}</p>
-        <p>"content">${searches.content}</p>
-        <button class="readmore" onclick="window.location.href = '${searches.url}';">READ MORE</button>
+        <p>${searches.content}</p>
+        <button class="readmore" onclick="window.open('${searches.url}')">READ MORE</button>
         `
         searchDetails.append(newSearch)
 
