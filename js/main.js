@@ -17,7 +17,7 @@ const searchTerms = "cosmetics, beauty, skincare, makeup"
 const searchResults = `${searchTerms.replace(/, /g, " OR ")}`
 const resultsURL = encodeURIComponent(searchResults)
 
-const antiSearchTerms = "NOT politics, NOT trump, NOT finance, NOT tech, NOT sports, NOT film, NOT food, NOT nike, NOT null";
+const antiSearchTerms = "NOT politics, NOT finance, NOT tech, NOT sports, NOT film, NOT food, NOT nike, NOT trump, NOT null";
 const antiSearchResults = `${antiSearchTerms.replace(/, /g, " AND ")}`
 const antiResultsURL = encodeURIComponent(antiSearchResults);
 
