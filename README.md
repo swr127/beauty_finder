@@ -13,9 +13,9 @@ Live App:
 |Jan 2rd| Create repository & README.md with project overview| Complete
 |Jan 3rd| Pseudocode core application structure (HTML, CSS, JavaScript) | Complete
 |Jan 5th| Code core application structure (HTML, CSS, Javascript) | Complete
-|Jan 6th| Code MVP | Incomplete
-|Jan 7th| Code core application styling (CSS) | Incomplete
-|Jan 8th| Code additional styling & PostMVP | Incomplete
+|Jan 6th| Code MVP | Complete
+|Jan 7th| Code core application styling (CSS) | Complete
+|Jan 8th| Code additional styling & PostMVP | In progress
 |Jan 9th| Present | Incomplete
 
 ## Priority Matrix
@@ -26,13 +26,12 @@ Live App:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Set up core code (HTML, CSS, JS) | H | 6hrs| 6hrs | TBD |
-| Find and use external API | H | 5hrs| 5hrs | TBD |
-| Render data on page | H | 4.5hrs| 4.5hrs | TBD |
-| Enable search functionality | H | 4.5hrs| 4.5hrs | TBD |
-| Implement responsive design | M | 3.5hrs| 3.5hrs | TBD |
-| Advanced CSS features | L | 3.5hrs| 3.5hrs | TBD |
-| Use local storage | L | 2.5hrs| 2.5hrs | TBD |
+| Set up core code (HTML, CSS, JS) | H | 6hrs| 6hrs | 8hrs |
+| Find and use external API | H | 5hrs| 5hrs | 3hrs |
+| Render data on page | H | 4.5hrs| 4.5hrs | 5hrs |
+| Enable search functionality | H | 4.5hrs| 4.5hrs | 3hrs |
+| Implement responsive design | M | 3.5hrs| 3.5hrs | 3hrs |
+| Advanced CSS features | L | 6hrs| 6hrs | TBD |
 | Total |  | 30hrs| 30hrs | TBD |
 
 ## Wireframes
@@ -70,8 +69,8 @@ Live App:
 
 ## PostMVP 
 
-- Add advanced CSS features to the news articles based on user interaction (i.e. zoom in on image when the user hovers over it)
-- Use local storage to save user search history
+- Filter out null data 
+- Add advanced CSS features to the news articles based on user interaction (i.e. scroll functionality, zoom in on image when the user hovers over it)
 
 ## Code Snippet
 
