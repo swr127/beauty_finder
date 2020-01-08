@@ -41,10 +41,7 @@ const renderArticles = async () => {
         const newArticle = document.createElement('div')
         newArticle.innerHTML =  `
         <img class="image" src=${article.urlToImage} />
-        <p>PUBLISHED: ${article.publishedAt}</p>
-        <p>SOURCE: ${article.source.name}</p>
-        <p>AUTHOR: ${article.author}</p>
-        <p>TITLE: ${article.title}</p>
+        <p><b>${article.title}</b></p>
         <p>${article.content}</p>
         <button class="readmore" onclick="window.open('${article.url}')">READ MORE</button>
         `
@@ -80,10 +77,7 @@ const renderSearch = async () => {
         const newSearch = document.createElement('div')
         newSearch.innerHTML =  `
         <img class="image" src=${searches.urlToImage} />
-        <p>PUBLISHED: ${searches.publishedAt}</p>
-        <p>SOURCE: ${searches.source.name}</p>
-        <p>AUTHOR: ${searches.author}</p>
-        <p>TITLE: ${searches.title}</p>
+        <p><b>${searches.title}</b></p>
         <p>${searches.content}</p>
         <button class="readmore" onclick="window.open('${searches.url}')">READ MORE</button>
         `
