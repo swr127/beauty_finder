@@ -15,7 +15,7 @@ Live App:
 |Jan 5th| Code core application structure (HTML, CSS, Javascript) | Complete
 |Jan 6th| Code MVP | Complete
 |Jan 7th| Code core application styling (CSS) | Complete
-|Jan 8th| Code additional styling & PostMVP | In progress
+|Jan 8th| Code additional styling & PostMVP | Complete
 |Jan 9th| Present | Incomplete
 
 ## Priority Matrix
@@ -70,11 +70,9 @@ Live App:
 ## PostMVP 
 
 - Filter out null data 
-- Add advanced CSS features to the news articles based on user interaction (i.e. scroll functionality, zoom in on image when the user hovers over it)
+- Add advanced CSS features to the news articles based on user interaction (i.e. scroll functionality, hover animations)
 
-## Code Snippet
-
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+## Code Snippet  
 
 ```
 articles.forEach(article => {
@@ -92,4 +90,4 @@ articles.forEach(article => {
 
 ## Change Log
 
-Use this section to document what changes were made and the reasoning behind those changes.  
+No major changes yet!  
