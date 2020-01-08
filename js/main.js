@@ -17,7 +17,7 @@ const searchTerms = "cosmetics, beauty, skincare, makeup"
 const searchResults = `${searchTerms.replace(/, /g, " OR ")}`
 const resultsURL = encodeURIComponent(searchResults)
 
-const antiSearchTerms = "NOT politics, NOT finance, NOT tech, NOT sports, NOT film, NOT food, NOT nike, NOT trump, NOT null";
+const antiSearchTerms = "NOT politics, NOT finance, NOT tech, NOT sports, NOT film, NOT food, NOT nike, NOT trump";
 const antiSearchResults = `${antiSearchTerms.replace(/, /g, " AND ")}`
 const antiResultsURL = encodeURIComponent(antiSearchResults);
 
@@ -42,7 +42,7 @@ const renderArticles = async () => {
         newArticle.innerHTML =  `
         <img class="image" src=${article.urlToImage} />
         <p><b>${article.title}</b></p>
-        <p>${article.content}</p>
+        <p>${article.description}</p>
         <button class="readmore" onclick="window.open('${article.url}')">READ MORE</button>
         `
         articleDetails.append(newArticle)
@@ -81,7 +81,7 @@ const renderSearch = async () => {
             newSearch.innerHTML =  `
             <img class="image" src=${searches.urlToImage} />
             <p><b>${searches.title}</b></p>
-            <p>${searches.content}</p>
+            <p>${searches.description}</p>
             <button class="readmore" onclick="window.open('${searches.url}')">READ MORE</button>
             `
         searchDetails.append(newSearch)

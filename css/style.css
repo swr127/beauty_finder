@@ -45,8 +45,8 @@ body {
   align-items: center;
   background-color: white;
   color: black;
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
   header {
@@ -63,8 +63,8 @@ body {
   .logo {
     float: left;
     height: 28px;
-    width: 28px;
     padding: 0px 0px 0px 10px;
+    width: 28px;
   }
 
   form {
@@ -76,8 +76,8 @@ body {
     border: 1;
     border-color: black;
     background-color: white;
-    font-size: 12px;
     color: black;
+    font-size: 12px;
   }
 
   .searchbutton:hover {
