@@ -64,14 +64,17 @@ searchRequest.addEventListener('click', (event => {
     renderSearch()
 }))
 
+
+
 const renderSearch = async () => {
 
-    try {
-        const responseSearch = await axios.get(`${searchURL}${searchInput.value}${sortBY}&apiKey=${apiKEY}`)
-        console.log(responseSearch)
+    const responseSearch = await axios.get(`${searchURL}${searchInput.value}${sortBY}&apiKey=${apiKEY}`)
+    console.log(responseSearch)
 
-        const search = responseSearch.data.articles
+    const search = responseSearch.data.articles
 
+    if (responseSearch.data.totalResults >= 1) {
+        
         const searchDetails = document.querySelector('article')
         searchDetails.innerHTML = ''
 
@@ -83,11 +86,12 @@ const renderSearch = async () => {
             <p>${searches.content}</p>
             <button class="readmore" onclick="window.open('${searches.url}')">READ MORE</button>
             `
-            searchDetails.append(newSearch)
+        searchDetails.append(newSearch)
+
         })
-    
-    } catch(err) {
-    
+
+    } else {
+
         const errorDetails = document.querySelector('article')
         errorDetails.innerHTML = ''
 
