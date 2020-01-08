@@ -77,9 +77,17 @@ Live App:
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+articles.forEach(article => {
+        const newArticle = document.createElement('div')
+        newArticle.innerHTML =  `
+        <img class="image" src=${article.urlToImage} />
+        <p><b>${article.title}</b></p>
+        <p>${article.description}</p>
+        <button class="readmore" onclick="window.open('${article.url}')">READ MORE</button>
+        `
+        articleDetails.append(newArticle)
+
+    })
 ```
 
 ## Change Log
