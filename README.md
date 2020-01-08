@@ -31,8 +31,8 @@ Live App:
 | Render data on page | H | 4.5hrs| 4.5hrs | 5hrs |
 | Enable search functionality | H | 4.5hrs| 4.5hrs | 3hrs |
 | Implement responsive design | M | 3.5hrs| 3.5hrs | 3hrs |
-| Advanced CSS features | L | 6hrs| 6hrs | TBD |
-| Total |  | 30hrs| 30hrs | TBD |
+| Advanced CSS features | L | 6hrs| 6hrs | 8hrs |
+| Total |  | 30hrs| 30hrs | 30hrs |
 
 ## Wireframes
 
