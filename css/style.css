@@ -182,12 +182,12 @@ body {
   }
 
   .description {
-    font-size: 16px;
+    font-size: 14px;
   }
   
   div {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px;
     width: 450px;
   }
@@ -215,12 +215,12 @@ body {
   }
 
   .description {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   div {
     display: block;
-    font-size: 13px;
+    font-size: 12px;
     padding: 10px;
     width: 450px;
   }
