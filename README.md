@@ -4,7 +4,7 @@
 
 The **Beauty Finder** is an application that leverages the News API to present news articles from over 30,000 sources that are specific to the beauty industry.
 
-Live App: https://pages.git.generalassemb.ly/swr127/beauty_finder/
+Live App: beauty-finder.surge.sh
 
 ## Project Schedule
 
