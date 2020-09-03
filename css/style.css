@@ -126,6 +126,12 @@ body {
     height: 100%;
   }
 
+  .error-temp {
+    color:#ec462f;
+    height: 100%;
+    font-weight: bolder;
+  }
+
   footer {
     color: black;
     font-size: 15px;
